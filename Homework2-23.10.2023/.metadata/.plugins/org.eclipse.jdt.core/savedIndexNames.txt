@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\ÝSTANBUL KODLUYOR\Odevler\Odev1-23.10.2023\.metadata\.plugins\org.eclipse.jdt.core
+1236853543.index
+1865797976.index
+1710147411.index

@@ -1,0 +1,57 @@
+package oop1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//OOP = Object Oriented Programming --> Nesne Yönelimli/Güdümlü Programlama
+		
+		//String mesaj = "vade oranı";
+			//veri tipi : String/Product
+			//verinin ismi : mesaj/product
+			//verinin değeri : "vade oranı"/new Product()
+		Product product1 = new Product();			//Product tipinde product isimli sınıf nesnesi
+		
+		// ~ set value - değer atama ~
+		product1.name = "Delonghi Kahve Makinesi";
+		product1.unitPrice = 7500;
+		product1.discount = 7;
+		product1.unitsInStock = 3;
+		product1.imageUrl = "bilmemne.jpg";
+		
+		// ~ get value - değer okuma ~
+		System.out.println(product1.name);
+	
+		
+		
+		Product product2 = new Product();
+		product1.name = "Smeeg Kahve Makinesi";
+		product1.unitPrice = 6500;
+		product1.discount = 8;
+		product1.unitsInStock = 2;
+		product1.imageUrl = "bilmemne2.jpg";
+		
+		
+		Product product3 = new Product();
+		product1.name = "Kitchen Aid Kahve Makinesi";
+		product1.unitPrice = 4500;
+		product1.discount = 9;
+		product1.unitsInStock = 4;
+		product1.imageUrl = "bilmemne3.jpg";
+		
+		
+		//int[] sayilar = {1,2,3,4};
+			//array tipi : int/Product
+			//array ismi : sayilar/products
+			//array elemanları : {1,2,3,4}/{product1, product2, product3}
+		Product[] products = {product1, product2, product3};
+		
+		for (Product product : products) {
+			System.out.println(product);
+		}
+		
+		
+		
+	}
+
+}
