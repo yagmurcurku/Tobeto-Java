@@ -1,0 +1,54 @@
+package intro;
+
+public class Main {
+
+	//main javada başlangıç metodudur.
+	public static void main(String[] args) {
+		
+		System.out.println("Hello, Tobeto !");
+	
+		//Değişken isimlendirmeleri camelCase yapılır.
+		
+		//metinsel veri türü : String
+		String ortaMetin = "İlginizi çekebilir";
+		String altMetin = "Vade süresi";
+		
+		//tamsayı veri türü : integer
+		int vade = 12;
+		
+		//ondalıklı veri türleri : double, decimal, float
+		double dolarDun = 18.14;
+		double dolarBugun = 18.20;
+		
+		//mantıksal veri türü : boolean (true OR false)
+		boolean dolarDustuMu = false;
+		
+		
+		
+		//"if-else if-else" şart bloğu
+		String okYonu = "";			// boş = empty
+		if(dolarBugun < dolarDun) {				//şart
+			okYonu = "down.swg";				//şart true ise if'in kendi scope'u çalışır
+			System.out.println(okYonu);			
+		}else if(dolarBugun == dolarDun) {		//if doğru değilse sırayla tüm else-if'lere bakılır. İstenildiği kadar else-if kullanılabilir.
+			okYonu = "equals.swg";				//else-if'te true durumu yakalanırsa else-if'in scope'u çalışır
+			System.out.println(okYonu);
+		}else {			//else kullanılmak zorunda değildir
+			okYonu = "up.swg";
+			System.out.println(okYonu);			//şart false ise else scope'u çalışır
+		}
+				
+		
+		
+		//Array (liste)
+		String deneme = "";
+		String[] krediler = {"Hızlı Kredi", "Maaşını Halkbank'tan Alanlar", "Mutlu Emekli"};
+	
+		for(int i = 0; i < krediler.length; i++) {
+			//0'dan başlat; krediler array'inin uzunluğundan küçük olduğu sürece dön; i'yi her dönüşte 1 arttır
+			System.out.println((i+1) + ".Kredi: " + krediler[i]);
+		}
+		
+	}
+
+}
