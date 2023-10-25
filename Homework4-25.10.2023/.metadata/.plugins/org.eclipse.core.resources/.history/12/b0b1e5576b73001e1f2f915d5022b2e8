@@ -1,0 +1,21 @@
+package oopWithNLayeredApp.business;
+
+import oopWithNLayeredApp.dataAccess.HibernateProductDao;
+import oopWithNLayeredApp.dataAccess.JdbcProductDao;
+import oopWithNLayeredApp.dataAccess.ProductDao;
+import oopWithNLayeredApp.entities.Product;
+
+public class ProductManager {
+	//buraya iş kuralları (business rules) yazılır ! 
+
+	public void add(Product product) throws Exception {
+		if(product.getUnitPrice()<10) {
+			throw new Exception("Fiyat 10'dan küçük olamaz !");
+		}
+		
+		ProductDao productDao = new JdbcProductDao();
+		productDao.add(product);
+	}
+	
+	
+}
