@@ -1,0 +1,10 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="workshop27102023.business.CarService"><rhs name\="workshop27102023.business.CarManager"/></lhs><lhs name\="workshop27102023.business.CarManager"><rhs name\="workshop27102023.business.CarManager"/></lhs><lhs name\="workshop27102023.dataAccess.CarDao"><rhs name\="workshop27102023.dataAccess.JdbcCarDao"/><rhs name\="workshop27102023.dataAccess.HibernateCarDao"/></lhs><lhs name\="workshop27102023.entities.Car"><rhs name\="workshop27102023.entities.Car"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="workshop27102023.dataAccess.JdbcCarDao"><rhs name\="workshop27102023.dataAccess.JdbcCarDao"/></lhs><lhs name\="workshop27102023.core.logging.Logger"><rhs name\="workshop27102023.core.logging.FileLogger"/><rhs name\="workshop27102023.core.logging.MailLogger"/></lhs></history>
+content_assist_number_of_computers=17
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

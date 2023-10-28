@@ -1,0 +1,5 @@
+package workshop27102023.business;
+
+public interface CarService {
+
+}
