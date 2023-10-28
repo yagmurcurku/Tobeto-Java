@@ -72,9 +72,5 @@ public class Main {
 		carManager.getAll();
 		
 		
-
-		
-		//LOGGER EKLE
-		//HİBERNATE'İ DOLDUR
 	}
 }
