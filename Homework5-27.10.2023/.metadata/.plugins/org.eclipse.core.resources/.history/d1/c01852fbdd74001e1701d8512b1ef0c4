@@ -1,0 +1,19 @@
+package workshop27102023.dataAccess;
+
+import java.util.List;
+
+import workshop27102023.entities.Car;
+
+public interface CarDao {
+	
+	void add(Car car);
+	
+	void delete(int id);
+	
+	void update(Car car);
+	
+	Car getById(int id);
+	
+	List<Car> getAll();
+
+}
