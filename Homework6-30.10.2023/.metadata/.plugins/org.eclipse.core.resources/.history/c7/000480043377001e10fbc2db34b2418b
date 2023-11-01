@@ -1,0 +1,30 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// total --> 10 tane sayı yazdırıldığında program duracak
+		int total = 0;
+		while (total < 10) {
+			
+				int sayi = 1;
+				int toplam = 0;
+				for(int bolen = 1; bolen < sayi ; bolen++) {
+					if(sayi % bolen == 0) {
+						toplam += bolen;
+					}
+				}
+				if(toplam == sayi) {
+					total+=1;
+					System.out.println(sayi + " mükemmel sayıdır");
+				}
+				sayi ++;
+				
+			
+		}
+		
+	
+		
+		
+	}
+}

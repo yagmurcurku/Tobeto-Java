@@ -1,0 +1,25 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// total --> 10 tane sayı yazdırıldığında program duracak
+		int total = 0;
+		for(int i = 1; total == 10; i++) {
+			
+			int toplam = 0;
+			for(int y = 1; y <= i ; y++) {
+				if(i % y == 0) {
+					toplam += y;
+				}
+			}
+			if(toplam == (i*2)) {
+				total+=1;
+			}
+			
+		}
+		System.out.println(total);
+		
+		
+	}
+}

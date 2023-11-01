@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		/*
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter String: ");
+		String strOld = scanner.nextLine();
+		String str = strOld.toLowerCase();
+		
+		
+		boolean isUnique = true;
+		
+		for(int i = 0; i < str.length(); i++) {
+			char c1 = str.charAt(i);
+			for(int y = i + 1; y < str.length(); y++) {
+				if(str.charAt(y)==c1) {
+					isUnique = false;
+					break;
+				}
+			}
+		}
+		
+		if(isUnique) {
+			System.out.println("This string is UNIQUE");
+		}else {
+			System.out.println("This string is NOT UNIQUE");
+		}
+		*/
+		
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter first string: ");
+		String str1Old = scanner.nextLine();
+		System.out.println("Enter second string: ");
+		String str2Old = scanner.nextLine();
+		
+		String str1 = str1Old.toLowerCase();
+		String str2 = str2Old.toLowerCase();
+		
+		char[] str1Array = {};
+		
+		for(int i = 0; i < str1.length(); i++) {
+			char c1 = str1.charAt(i);
+			str1Array[i] = c1;
+		}
+		
+		for (char c : str1Array) {
+			System.out.println(c);
+		}
+		
+		
+	}
+
+}

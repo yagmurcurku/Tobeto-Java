@@ -1,0 +1,30 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Lütfen bir kelime girin: ");
+		String word = scanner.nextLine();
+		
+		char[] dizi = {};
+		for(int i = 0; i<word.length(); i++) {
+			char character = word.charAt(i);
+			dizi[i] = character;
+			
+		}
+		
+		for(int i = 0; i<word.length(); i++) {
+			for(int y = 0; y<word.length(); y++) {
+				if(dizi[i]==word.charAt(y)) {
+					System.out.println("aynı harf");
+				}
+			}
+			
+		}
+		
+	}
+
+}

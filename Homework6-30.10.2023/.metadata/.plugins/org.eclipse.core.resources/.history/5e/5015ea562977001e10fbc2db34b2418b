@@ -1,0 +1,24 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int n1 = 0;
+		int n2 = 1;
+		System.out.println("1. number of the fibonacci sequence --> " + n1);
+		System.out.println("2. number of the fibonacci sequence --> " + n2);
+
+		
+		int firstNumber = 0;
+		int secondNumber = 0;
+		for(int i = 1; i<=100; i++) {
+			int thirdNumber = firstNumber + secondNumber;
+			System.out.println((i+1) + ". number of the fibonacci sequence --> " + thirdNumber);
+			firstNumber = secondNumber;
+			secondNumber = thirdNumber;
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int total = 0;
+		int number1 = 1;
+		int number2 = 1;
+		int total1 = 0;
+		int total2 = 0;
+		while(total < 2) {
+			
+			for(int i = 1; i < number1; i++) {
+				for(int y = 1; i < number2; y++) {
+					if(number1 % i == 0) {
+						total1 += i;
+					}
+					if(number2 % y == 0) {
+						total2 += y;
+					}
+				number2++;
+				}
+			number1++;
+			}
+			
+			if(total1 == total2) {
+				System.out.println(number1);
+				System.out.println(number2);
+				total ++;
+			}
+			
+			
+	
+		}
+		
+		
+		
+	}
+
+}

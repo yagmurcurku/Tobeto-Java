@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz: ");
+        String sayi = scanner.nextLine();
+        
+        
+        int sayiUzunlugu = sayi.length();
+        int sayiYeni = Integer.parseInt(sayi);
+       
+        int kalan = 0;
+        int toplam = 0;
+        
+        while(sayiYeni != 0) {
+        	kalan = sayiYeni % 10;
+        	toplam += Math.pow(kalan, sayiUzunlugu);
+        	sayiYeni = sayiYeni / 10;
+        }
+        
+      
+        
+        
+        
+        if(toplam == sayiYeni) {
+        	System.out.println(sayi + " bir armstrong sayıdır");
+        }else {
+        	System.out.println(sayi + " bir armstrong sayı değildir !");
+        }
+        
+	}
+
+}

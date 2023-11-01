@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		String number = scanner.nextLine();
+		
+		int numberLength = number.length();
+		int sayi = Integer.parseInt(number);
+		
+		int kalan = 0;
+		//int number = 407;
+		
+        int originalNumber, remainder, result = 0;
+
+        originalNumber = sayi;
+
+        while (sayi != 0) {
+            kalan = sayi % 10;
+            result += Math.pow(kalan, numberLength);
+            sayi /= 10;
+        }
+
+        if (result == sayi)
+            System.out.println(number + " is an Armstrong number.");
+        else
+            System.out.println(number + " is not an Armstrong number.");
+ 
+		/*
+		Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz: ");
+        String sayi = scanner.nextLine();
+        
+        
+        int sayiUzunlugu = sayi.length();
+        int sayiYeni = Integer.parseInt(sayi);
+       
+        int kalan = 0;
+        int toplam = 0;
+        
+        while(sayiYeni != 0) {
+        	kalan = sayiYeni % 10;
+        	toplam += Math.pow(kalan, sayiUzunlugu);
+        	sayiYeni = sayiYeni / 10;
+        }
+        
+     
+        if(toplam == sayiYeni) {
+        	System.out.println(sayi + " bir armstrong sayıdır");
+        }else {
+        	System.out.println(sayi + " bir armstrong sayı değildir !");
+        }
+        */
+        
+	}
+
+}

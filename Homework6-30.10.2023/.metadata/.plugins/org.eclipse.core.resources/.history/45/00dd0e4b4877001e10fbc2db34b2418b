@@ -1,0 +1,39 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Lütfen bir kelime girin: ");
+		String word = scanner.nextLine();
+		
+		char[] dizi = {};
+		for(int i = 0; i<word.length(); i++) {
+			char character = word.charAt(i);
+			dizi[i] = character;
+			
+		}
+		
+		Map<Character, Integer> chars = new HashMap<>();
+		
+		for(int i = 0; i<word.length(); i++) {
+			for(int y = 0; y<word.length(); y++) {
+				if(dizi[i]==word.charAt(y)) {
+					chars.put(dizi[i], chars.get(dizi[i])+1);
+				}
+			}
+		}
+		
+		for (Map.Entry<Character, Integer> c : chars.entrySet()) {
+			System.out.println("Karakter: " + c.getKey() + ", Sayı: " + c.getValue());
+		}
+		
+		
+		
+	}
+
+}

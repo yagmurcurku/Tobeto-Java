@@ -1,0 +1,40 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Lütfen bir kelime girin: ");
+		String word = scanner.nextLine();
+		
+		Map<Character, Integer> chars = new HashMap<>();
+		
+		String wordNew = word.toLowerCase();
+	
+		
+
+		for(int i = 0; i<wordNew.length(); i++) {
+			char character = wordNew.charAt(i);
+			//"character" isimli anahtar mevcut mu ?
+			if(chars.containsKey(character)) {
+				//mevcutsa bu character anahtarının değeri 1 artırılır
+				chars.put(character, chars.get(character)+1);
+			}else {
+				//mevcut değilse bu character anahtarının değerine 1 verilir
+				chars.put(character, 1);
+			}
+		}
+		
+		
+		for (Map.Entry<Character, Integer> c : chars.entrySet()) {
+			System.out.println("Karakter: " + c.getKey() + ", Sayı: " + c.getValue());
+		}
+		
+		
+		
+	}
+
+}
